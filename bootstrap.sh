@@ -88,7 +88,7 @@ systemctl enable mac-host.service
 echo "${hostname}" > /etc/hostname
 
 # Install stuff
-pacman -S vim htop parted sudo --noconfirm --needed
+pacman -S vim htop parted sudo plasma-desktop bluez --noconfirm --needed
 
 # Sometiems the network file is missing for some unknown reason
 if [ ! -f "/etc/systemd/network/en.network" ] ; then
